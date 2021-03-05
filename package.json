@@ -1,0 +1,45 @@
+{
+    "name": "fuxt",
+    "version": "3.0.0",
+    "engines": {
+        "node": "15.4.0"
+    },
+    "description": "A Vue/Nuxt frontend boiler plate optimzed to work with the fuxt-backend WordPress theme.",
+    "author": "Funkhaus",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "storybook": "nuxt storybook",
+        "storybook-build": "nuxt storybook build",
+        "generate": "nuxt generate",
+        "heroku-postbuild": "npm run build"
+    },
+    "dependencies": {
+        "cheerio": "^1.0.0-rc.5",
+        "core-js": "^3.9.0",
+        "lodash": "^4.17.21",
+        "nuxt": "^2.15.2"
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-object-rest-spread": "^7.13.0",
+        "@nuxtjs/dotenv": "^1.4.1",
+        "@nuxtjs/sitemap": "^2.4.0",
+        "@nuxtjs/storybook": "^3.3.1",
+        "@nuxtjs/style-resources": "^1.0.0",
+        "eslint": "^7.20.0",
+        "eslint-plugin-vue": "^7.6.0",
+        "graphql": "^15.5.0",
+        "graphql-tag": "^2.11.0",
+        "node-sass": "^5.0.0",
+        "nodemon": "^2.0.7",
+        "nuxt-graphql-request": "^3.2.1",
+        "prettier": "^2.2.0",
+        "prettier-eslint": "^12.0.0",
+        "sass-loader": "^10.1.1",
+        "vue-svg-loader": "^0.16.0",
+        "vue-template-compiler": "^2.6.12",
+        "webfontloader": "^1.6.28"
+    }
+}

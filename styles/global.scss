@@ -1,0 +1,142 @@
+/*
+ * This file is included once, for the entire sute.
+ * It's useful for global styles.
+ */
+
+// Globals
+body {
+    font-family: var(--font-primary);
+    font-size: 16px;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+::selection {
+    color: var(--color-white);
+    background: var(--color-black);
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.4s;
+}
+button {
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    margin: 0;
+}
+.title {
+    .line {
+        display: block;
+    }
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+// Z-Indexs
+.page {
+    z-index: 100;
+}
+.footer {
+    z-index: 200;
+}
+.header {
+    z-index: 300;
+}
+.menu-panel {
+    z-index: 400;
+}
+.global-hamburger {
+    z-index: 500;
+}
+
+// Animations
+// .bounce {
+//     animation: bounce 1.5s ease-in-out infinite;
+// }
+// @keyframes bounce {
+//     0%,
+//     20%,
+//     50%,
+//     80%,
+//     100% {
+//         transform: translateY(0) translateX(-50%);
+//     }
+//     40% {
+//         transform: translateY(-5px) translateX(-50%);
+//     }
+//     60% {
+//         transform: translateY(5px) translateX(-50%);
+//     }
+// }
+
+// Generic content Styles
+.entry {
+    margin: 80px auto;
+    text-align: center;
+
+    a {
+        color: red;
+        text-decoration: underline;
+    }
+    ul {
+        list-style: none;
+    }
+    > {
+        h1,
+        h2,
+        h3,
+        p {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        h1,
+        h2,
+        h3,
+        blockquote {
+            margin: 20px auto;
+        }
+        h2 {
+            font-size: 26px;
+        }
+        p {
+            text-align: left;
+            max-width: 600px;
+            line-height: 1.4;
+        }
+        .alignnone,
+        .shortcode-gallery,
+        .fit-vid {
+            margin: 60px auto;
+        }
+        .alignnone {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-width: 1280px;
+        }
+        .fit-vid {
+            max-width: 1280px;
+        }
+    }
+}

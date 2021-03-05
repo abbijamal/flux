@@ -1,0 +1,20 @@
+#import "~/gql/fragments/MediaImage.gql"
+
+# Query to get all the sub pages of the homepage
+query Home($uri: String!) {
+    nodeByUri(uri: $uri) {
+        ... on Page {
+            title
+            encodedContent # Use this instead of content when using <wp-content>
+            id
+            # acfMeta {
+            #     videoUrl
+            # }
+            featuredImage {
+                node {
+                    ...MediaImage
+                }
+            }
+        }
+    }
+}
